@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Home from "./Home";
 import "./Login.css";
+import "./RegisterForm.css";
 
 function UserRegister() {
   const [name, setName] = useState("");
@@ -44,8 +45,8 @@ function UserRegister() {
   }
 
   return (
-    <div>
-      <div className="form-container">
+    <div className="register-container">
+      <div>
         <h2>Register</h2>
         <form action="" method="post" className="form" onSubmit={handleSubmit}>
           {/* register */}
